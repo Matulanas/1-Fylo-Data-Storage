@@ -1,0 +1,99 @@
+
+body {
+    background-color: #0c122c;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+main {
+    display: inline-block;
+    margin-top: calc((100vh - 200px) / 2);
+    width: 70%;
+    height: 200px;
+}
+
+/* Left - Logo Section */
+.logo_section {
+    display: grid;
+    box-sizing: border-box;
+    float: left;
+    background-color: #1D2C67;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px;
+    
+}
+    .logo_section > img {
+        display: inline-block;
+        float: left;
+    }
+
+.icons {
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+}
+    .icons > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 30px;
+        height: 30px;
+        background-color: #0c122c;
+        border: 10px;
+        border-radius: 10px;
+        padding: 6px;
+        margin-right: 15px; 
+    }
+
+
+/* Right - Info Section */
+.info_section {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 50%;
+
+}
+.info {
+    display: inline-block;
+    height: 80%;
+    width: 100%;
+    background-color: #1D2C67;
+    border-radius: 10px;
+    float: left;
+}
+.storage-info {
+    display: inline-block;
+    color: #848794;
+    float: left;
+}
+    .storage-info > p > span {
+        color: #fff;
+    }
+.left-info {
+    background-color: #fff;
+    width: 150px;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.empty {
+    float: left;
+    color: #fff;
+}
+.full {
+    float: right;
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 11px; 
+    align-items: center;
+    color: hsl(228, 45%, 44%);
+}
