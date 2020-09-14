@@ -4,7 +4,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 125%;
-    /* background-attachment: fixed; */
     background-color: #0c122c;
     margin: 0;
     text-align: center;
@@ -29,7 +28,6 @@ main {
     height: 200px;
     border-radius: 10px 100px 10px 10px;
     padding: 40px;
-    
 }
     .logo_section > img {
         display: inline-block;
