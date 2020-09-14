@@ -1,5 +1,10 @@
 
 body {
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 125%;
+    /* background-attachment: fixed; */
     background-color: #0c122c;
     margin: 0;
     text-align: center;
@@ -62,42 +67,62 @@ main {
 }
 .info {
     display: grid;
+    grid-template-rows: auto;
     justify-content: left;
     align-items: center;
-    height: 80%;
-    width: auto;
+    height: calc(80% - 20px);
     background-color: #1D2C67;
     border-radius: 10px;
-    float: left;
     margin-left: 25px;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 .storage-info {
     display: inline-block;
     color: #848794;
-    width: 100%;
 }
     .storage-info > p {
         display: inline-block;
         float: left;
-        width: 100%;
+        margin: 30px 0 0 0;
     }
     .storage-info > p > span {
         display: inline-block;
         color: #fff;
     }
+/* Progress Bar */
 .progress-bar {
     display: inline-block;
     background-color: #0c122c;
     border-radius: 15px;
-    width: 100%;
-    float: left;
+    width: 610px;
+    height: 10px;
 }
-
+.progress {
+    background-image: linear-gradient(90deg, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 15px;
+    width: 80%;
+    height: 10px;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff; 
+    clip-path: circle();
+    float: right;
+}
+.scale {
+    margin: 0 0 40px 0;
+}
+.scale > p {
+    margin: 0;
+}
+/* Download left info block */
 .left-info {
     display: grid;
     align-items: center;
     background-color: #fff;
-    right: 60px;
+    right: 80px;
     top: 0;
     width: 150px;
     height: 80px;
@@ -115,6 +140,16 @@ main {
     font-weight: 400;
     align-items: center;
     justify-content: center;
+}
+.left-info::before {
+    content: "";
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 .empty {
     float: left;
